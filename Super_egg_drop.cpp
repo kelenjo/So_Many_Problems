@@ -2,8 +2,6 @@ class Solution {
 public:
     int superEggDrop(int k, int n) {
         vector<vector<int>> x(k + 1, vector<int>(n + 1, -1));
-        if(n==1)
-            return 1;
         return find(k, n, x);
 
     }
